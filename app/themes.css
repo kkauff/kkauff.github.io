@@ -1,0 +1,23 @@
+/* ─── classicLight ─────────────────────────────────────────── */
+[data-theme="classicLight"] {
+  --background: #ffffff;
+  --foreground: #171717;
+  --muted:      #374151; /* gray-700 */
+  --subtle:     #e5e7eb; /* gray-200 — borders / dividers */
+  --accent:     #9ca3af; /* gray-400 — timeline dots */
+  --name:       #171717; /* h1 color */
+  --section:    #111827; /* h2 color */
+  --link:       #2563eb; /* blue-600 */
+}
+
+/* ─── motionDark ────────────────────────────────────────────── */
+[data-theme="motionDark"] {
+  --background: #0d0d0d;
+  --foreground: #ededed;
+  --muted:      #888888;
+  --subtle:     rgba(110, 252, 191, 0.3); /* mint at 30% — borders / dividers */
+  --accent:     #6efcbf; /* mint — timeline line + dots */
+  --name:       #ff2d78; /* hot pink — h1 */
+  --section:    #6efcbf; /* mint — h2 */
+  --link:       #4f7fff; /* electric blue */
+}
