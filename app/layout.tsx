@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "kkauff.github.io",
-  description: "Personal website built with Next.js and TypeScript",
+  title: "Katie Kauffman",
+  description: "Software engineer and builder focused on human-centered systems.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="font-sans">
         {children}
       </body>
     </html>
