@@ -2,22 +2,34 @@
 [data-theme="classicLight"] {
   --background: #ffffff;
   --foreground: #171717;
-  --muted:      #374151; /* gray-700 */
-  --subtle:     #e5e7eb; /* gray-200 — borders / dividers */
-  --accent:     #9ca3af; /* gray-400 — timeline dots */
-  --name:       #171717; /* h1 color */
-  --section:    #111827; /* h2 color */
-  --link:       #2563eb; /* blue-600 */
+  --muted: #374151; /* gray-700 */
+  --subtle: #e5e7eb; /* gray-200 — borders / dividers */
+  --accent: #9ca3af; /* gray-400 — timeline dots */
+  --name: #171717; /* h1 color */
+  --section: #111827; /* h2 color */
+  --link: #2563eb; /* blue-600 */
+}
+
+/* ─── fluxLight ─────────────────────────────────────────────── */
+[data-theme="fluxLight"] {
+  --background: #fffbf2; /* near-white, barely warm */
+  --foreground: #1a1510; /* near-black, faintly warm */
+  --muted: #3e3426; /* gray-700, slightly warm */
+  --subtle: #ece3d0; /* gray-200, warm tint on borders */
+  --accent: #a89c83; /* gray-400, warm sand */
+  --name: #1a1510; /* h1 color */
+  --section: #120e08; /* h2 color */
+  --link: #1e58d4; /* blue-600, slightly desaturated warm */
 }
 
 /* ─── motionDark ────────────────────────────────────────────── */
 [data-theme="motionDark"] {
   --background: #0d0d0d;
   --foreground: #ededed;
-  --muted:      #888888;
-  --subtle:     rgba(110, 252, 191, 0.3); /* mint at 30% — borders / dividers */
-  --accent:     #6efcbf; /* mint — timeline line + dots */
-  --name:       #ff2d78; /* hot pink — h1 */
-  --section:    #6efcbf; /* mint — h2 */
-  --link:       #4f7fff; /* electric blue */
+  --muted: #888888;
+  --subtle: rgba(110, 252, 191, 0.3); /* mint at 30% — borders / dividers */
+  --accent: #6efcbf; /* mint — timeline line + dots */
+  --name: #ff2d78; /* hot pink — h1 */
+  --section: #6efcbf; /* mint — h2 */
+  --link: #4f7fff; /* electric blue */
 }

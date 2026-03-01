@@ -1,7 +1,7 @@
 export const content = {
   name: "Katie Kauffman",
 
-  bio: "I'm a software engineer and builder focused on creating thoughtful, human-centered systems at the intersection of technology, design, and real-world impact. My work spans full-stack development, product thinking, and exploratory projects driven by curiosity, clarity, and long-term usefulness. I'm especially drawn to problems where rigor and creativity meet.",
+  bio: "I'm a software engineer and builder focused on creating human-centered systems with real-world impact. My work spans full-stack development, product thinking, and exploratory projects. I'm especially drawn to problems where rigor and creativity meet.",
 
   timeline: [
     {

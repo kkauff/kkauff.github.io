@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Katie Kauffman",
-  description: "Software engineer and builder focused on human-centered systems.",
+  description:
+    "Software engineer and builder focused on human-centered systems.",
 };
 
 export default function RootLayout({
@@ -12,10 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="classicLight">
-      <body className="font-sans">
-        {children}
-      </body>
+    <html lang="en" data-theme="fluxLight">
+      <body className="font-sans">{children}</body>
     </html>
   );
 }
