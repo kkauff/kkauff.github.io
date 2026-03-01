@@ -6,6 +6,7 @@ const nextConfig = {
   },
   basePath: '',  // Empty for user sites (username.github.io)
   assetPrefix: '',
+  transpilePackages: ['@mui/material', '@mui/lab', '@mui/system'],
 }
 
 module.exports = nextConfig

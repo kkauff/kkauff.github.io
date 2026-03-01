@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import { DM_Sans, Inconsolata } from "next/font/google";
 import "./globals.css";
+
+const headerFont = DM_Sans({ subsets: ["latin"], variable: "--header-font" });
+const paragraphFont = Inconsolata({ subsets: ["latin"], variable: "--paragraph-font" });
 
 export const metadata: Metadata = {
   title: "Katie Kauffman",
@@ -13,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="fluxLight">
-      <body className="font-sans">{children}</body>
+    <html lang="en" data-theme="fluxLight" className={`${headerFont.variable} ${paragraphFont.variable}`}>
+      <body style={{ fontFamily: "var(--paragraph-font)" }}>{children}</body>
     </html>
   );
 }

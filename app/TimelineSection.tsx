@@ -34,6 +34,7 @@ export default function TimelineSection() {
               color: "var(--muted)",
               fontSize: "0.875rem",
               fontWeight: 500,
+              fontFamily: "inherit",
               flex: 0.25,
               paddingLeft: 0,
               paddingTop: "6px",
@@ -56,12 +57,13 @@ export default function TimelineSection() {
             )}
           </TimelineSeparator>
 
-          <TimelineContent sx={{ paddingRight: 0, paddingBottom: "20px" }}>
+          <TimelineContent sx={{ paddingRight: 0, paddingBottom: "20px", fontFamily: "inherit" }}>
             <p
               style={{
                 color: "var(--foreground)",
                 fontWeight: 600,
                 fontSize: "1.125rem",
+                fontFamily: "inherit",
                 margin: 0,
               }}
             >
@@ -72,6 +74,7 @@ export default function TimelineSection() {
                 style={{
                   color: "var(--muted)",
                   fontSize: "0.875rem",
+                  fontFamily: "inherit",
                   marginTop: "4px",
                   marginBottom: 0,
                 }}
