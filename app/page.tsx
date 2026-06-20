@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { content } from "./content";
 import TimelineSection from "./TimelineSection";
+import ProjectsSection from "./ProjectsSection";
+import SectionHeading from "./SectionHeading";
 import SocialButtons from "./SocialButtons";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground px-6 py-16 max-w-3xl mx-auto">
+    <main className="min-h-screen bg-background text-foreground px-6 py-16 max-w-5xl mx-auto">
       {/* Header */}
       <div className="flex flex-col sm:flex-row items-center gap-8 mb-12">
 
@@ -30,13 +32,20 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Timeline */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-8 border-b border-subtle pb-3 text-section" style={{ fontFamily: "var(--header-font)" }}>
-          Professional Timeline
-        </h2>
-        <TimelineSection />
-      </section>
+      {/* Two-column body: Open Source Work + Professional Timeline */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12">
+        {/* Open Source Work */}
+        <section>
+          <SectionHeading>Open Source Work</SectionHeading>
+          <ProjectsSection />
+        </section>
+
+        {/* Professional Timeline */}
+        <section>
+          <SectionHeading>Professional Timeline</SectionHeading>
+          <TimelineSection />
+        </section>
+      </div>
     </main>
   );
 }
