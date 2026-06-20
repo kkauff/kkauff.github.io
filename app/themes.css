@@ -7,7 +7,7 @@
   --accent: #9ca3af; /* gray-400 — timeline dots */
   --name: #171717; /* h1 color */
   --section: #111827; /* h2 color */
-  --link: #2563eb; /* blue-600 */
+  --link: #2d72d2; /* blue-600 */
 }
 
 /* ─── fluxLight ─────────────────────────────────────────────── */
@@ -19,7 +19,7 @@
   --accent: #a89c83; /* gray-400, warm sand */
   --name: #1a1510; /* h1 color */
   --section: #120e08; /* h2 color */
-  --link: #1e58d4; /* blue-600, slightly desaturated warm */
+  --link: #2d72d2; /* blue-600, slightly desaturated warm */
 }
 
 /* ─── motionDark ────────────────────────────────────────────── */
