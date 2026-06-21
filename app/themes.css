@@ -11,15 +11,16 @@
 }
 
 /* ─── fluxLight ─────────────────────────────────────────────── */
+/* Warm "sunset" identity — amber accents set it clearly apart from classic. */
 [data-theme="fluxLight"] {
-  --background: #fffbf2; /* near-white, barely warm */
-  --foreground: #1a1510; /* near-black, faintly warm */
-  --muted: #3e3426; /* gray-700, slightly warm */
-  --subtle: #ece3d0; /* gray-200, warm tint on borders */
-  --accent: #a89c83; /* gray-400, warm sand */
-  --name: #1a1510; /* h1 color */
-  --section: #120e08; /* h2 color */
-  --link: #2d72d2; /* blue-600, slightly desaturated warm */
+  --background: #fff8ec; /* warm cream */
+  --foreground: #2a1c10; /* warm near-black */
+  --muted: #6f5b44; /* warm brown — secondary text */
+  --subtle: #f0e3cf; /* warm tan — borders / dividers */
+  --accent: #f0883e; /* amber — timeline line + dots */
+  --name: #c2410c; /* terracotta — h1 */
+  --section: #9a3412; /* deep terracotta — h2 */
+  --link: #b45309; /* amber-brown — links */
 }
 
 /* ─── motionDark ────────────────────────────────────────────── */
