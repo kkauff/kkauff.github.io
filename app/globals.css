@@ -16,44 +16,11 @@ body {
   }
 }
 
-/* ─── Open Source Work: card entrance + icon bounce ─────────── */
-@keyframes cardIn {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.project-card {
-  animation: cardIn 0.6s ease-out both;
-}
-
-@keyframes iconBounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  30% {
-    transform: translateY(-6px);
-  }
-  55% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(-3px);
-  }
-}
-
-.project-icon {
-  transition: transform 0.2s ease-out;
-}
-
-.project-icon:hover {
-  animation: iconBounce 0.6s ease-out;
+/* ─── Theme switcher dropdown options ───────────────────────── */
+.theme-option:hover,
+.theme-option:focus-visible {
+  background: var(--subtle);
+  outline: none;
 }
 
 /* ─── Profile: social icons orbit into place around the photo ─ */
@@ -78,8 +45,6 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .project-card,
-  .project-icon:hover,
   .social-orbit {
     animation: none;
   }

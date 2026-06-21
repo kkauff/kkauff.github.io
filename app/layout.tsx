@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Inconsolata } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const headerFont = DM_Sans({ subsets: ["latin"], variable: "--header-font" });
@@ -25,10 +26,19 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="fluxLight"
+      data-theme="classicLight"
       className={`${headerFont.variable} ${paragraphFont.variable}`}
     >
+      <head>
+        {/* Apply the saved theme before paint to avoid a flash on reload. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}`,
+          }}
+        />
+      </head>
       <body style={{ fontFamily: "var(--paragraph-font)" }}>{children}</body>
+      <GoogleAnalytics gaId="G-V0QNT61W6R" />
     </html>
   );
 }
